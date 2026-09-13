@@ -1,110 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="2600" height="2532" viewBox="0 0 2600 2532">
+<svg xmlns="http://www.w3.org/2000/svg" width="2599" height="5180" viewBox="0 0 2599 5180">
 <title>Sitemap de IndieCinema</title>
-<rect width="2600" height="2532" fill="#ffffff"/>
+<rect width="2599" height="5180" fill="#ffffff"/>
 <g fill="none" stroke="#6b6b6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-<path d="M 598 1133 H 656.5"/>
-<path d="M 656.5 214 V 2121"/>
-<path d="M 656.5 214 H 715"/>
-<path d="M 656.5 426 H 715"/>
-<path d="M 656.5 567 H 715"/>
-<path d="M 656.5 708 H 715"/>
-<path d="M 656.5 850 H 715"/>
-<path d="M 656.5 1133 H 715"/>
-<path d="M 656.5 1626 H 715"/>
-<path d="M 656.5 2121 H 715"/>
-<path d="M 1241 214 H 1300"/>
-<path d="M 1300 214 H 1359"/>
-<path d="M 1241 426 H 1300"/>
-<path d="M 1300 426 H 1359"/>
-<path d="M 1241 567 H 1300"/>
-<path d="M 1300 567 H 1359"/>
-<path d="M 1241 1133 H 1300"/>
-<path d="M 1300 991 V 1274"/>
-<path d="M 1300 991 H 1359"/>
-<path d="M 1300 1133 H 1359"/>
-<path d="M 1300 1274 H 1359"/>
-<path d="M 1241 1626 H 1300"/>
-<path d="M 1300 1415 V 1839"/>
-<path d="M 1300 1415 H 1359"/>
-<path d="M 1300 1556 H 1359"/>
-<path d="M 1300 1697 H 1359"/>
-<path d="M 1300 1839 H 1359"/>
-<path d="M 1241 2121 H 1300"/>
-<path d="M 1300 1980 V 2263"/>
-<path d="M 1300 1980 H 1359"/>
-<path d="M 1300 2121 H 1359"/>
-<path d="M 1300 2263 H 1359"/>
-<path d="M 1885 214 H 1943.5"/>
-<path d="M 1943.5 143 V 285"/>
-<path d="M 1943.5 143 H 2002"/>
-<path d="M 1943.5 285 H 2002"/>
-<path d="M 1885 426 H 1943.5"/>
-<path d="M 1943.5 426 H 2002"/>
+<path d="M 1884 241.0 H 1942.5"/>
+<path d="M 1942.5 241.0 V 171.0 H 2001"/>
+<path d="M 1884 241.0 H 1942.5"/>
+<path d="M 1942.5 241.0 V 311.0 H 2001"/>
+<path d="M 1241 241.0 H 1299.5"/>
+<path d="M 1299.5 241.0 V 241.0 H 1358"/>
+<path d="M 1884 731.0 H 1942.5"/>
+<path d="M 1942.5 731.0 V 521.0 H 2001"/>
+<path d="M 1884 731.0 H 1942.5"/>
+<path d="M 1942.5 731.0 V 661.0 H 2001"/>
+<path d="M 1884 731.0 H 1942.5"/>
+<path d="M 1942.5 731.0 V 801.0 H 2001"/>
+<path d="M 1884 731.0 H 1942.5"/>
+<path d="M 1942.5 731.0 V 941.0 H 2001"/>
+<path d="M 1241 731.0 H 1299.5"/>
+<path d="M 1299.5 731.0 V 731.0 H 1358"/>
+<path d="M 1241 1221.0 H 1299.5"/>
+<path d="M 1299.5 1221.0 V 1151.0 H 1358"/>
+<path d="M 1241 1221.0 H 1299.5"/>
+<path d="M 1299.5 1221.0 V 1291.0 H 1358"/>
+<path d="M 1241 2271.0 H 1299.5"/>
+<path d="M 1299.5 2271.0 V 1921.0 H 1358"/>
+<path d="M 1241 2271.0 H 1299.5"/>
+<path d="M 1299.5 2271.0 V 2061.0 H 1358"/>
+<path d="M 1241 2271.0 H 1299.5"/>
+<path d="M 1299.5 2271.0 V 2201.0 H 1358"/>
+<path d="M 1241 2271.0 H 1299.5"/>
+<path d="M 1299.5 2271.0 V 2341.0 H 1358"/>
+<path d="M 1241 2271.0 H 1299.5"/>
+<path d="M 1299.5 2271.0 V 2481.0 H 1358"/>
+<path d="M 1241 2271.0 H 1299.5"/>
+<path d="M 1299.5 2271.0 V 2621.0 H 1358"/>
+<path d="M 1241 3181.0 H 1299.5"/>
+<path d="M 1299.5 3181.0 V 2831.0 H 1358"/>
+<path d="M 1241 3181.0 H 1299.5"/>
+<path d="M 1299.5 3181.0 V 2971.0 H 1358"/>
+<path d="M 1241 3181.0 H 1299.5"/>
+<path d="M 1299.5 3181.0 V 3111.0 H 1358"/>
+<path d="M 1241 3181.0 H 1299.5"/>
+<path d="M 1299.5 3181.0 V 3251.0 H 1358"/>
+<path d="M 1241 3181.0 H 1299.5"/>
+<path d="M 1299.5 3181.0 V 3391.0 H 1358"/>
+<path d="M 1241 3181.0 H 1299.5"/>
+<path d="M 1299.5 3181.0 V 3531.0 H 1358"/>
+<path d="M 1241 3881.0 H 1299.5"/>
+<path d="M 1299.5 3881.0 V 3741.0 H 1358"/>
+<path d="M 1241 3881.0 H 1299.5"/>
+<path d="M 1299.5 3881.0 V 3881.0 H 1358"/>
+<path d="M 1241 3881.0 H 1299.5"/>
+<path d="M 1299.5 3881.0 V 4021.0 H 1358"/>
+<path d="M 1241 4511.0 H 1299.5"/>
+<path d="M 1299.5 4511.0 V 4231.0 H 1358"/>
+<path d="M 1241 4511.0 H 1299.5"/>
+<path d="M 1299.5 4511.0 V 4371.0 H 1358"/>
+<path d="M 1241 4511.0 H 1299.5"/>
+<path d="M 1299.5 4511.0 V 4511.0 H 1358"/>
+<path d="M 1241 4511.0 H 1299.5"/>
+<path d="M 1299.5 4511.0 V 4651.0 H 1358"/>
+<path d="M 1241 4511.0 H 1299.5"/>
+<path d="M 1299.5 4511.0 V 4791.0 H 1358"/>
+<path d="M 598 2376.0 H 656.5"/>
+<path d="M 656.5 2376.0 V 241.0 H 715"/>
+<path d="M 598 2376.0 H 656.5"/>
+<path d="M 656.5 2376.0 V 731.0 H 715"/>
+<path d="M 598 2376.0 H 656.5"/>
+<path d="M 656.5 2376.0 V 1221.0 H 715"/>
+<path d="M 598 2376.0 H 656.5"/>
+<path d="M 656.5 2376.0 V 1501.0 H 715"/>
+<path d="M 598 2376.0 H 656.5"/>
+<path d="M 656.5 2376.0 V 1711.0 H 715"/>
+<path d="M 598 2376.0 H 656.5"/>
+<path d="M 656.5 2376.0 V 2271.0 H 715"/>
+<path d="M 598 2376.0 H 656.5"/>
+<path d="M 656.5 2376.0 V 3181.0 H 715"/>
+<path d="M 598 2376.0 H 656.5"/>
+<path d="M 656.5 2376.0 V 3881.0 H 715"/>
+<path d="M 598 2376.0 H 656.5"/>
+<path d="M 656.5 2376.0 V 4511.0 H 715"/>
 </g>
-<rect x="72" y="1074" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
-<rect x="715" y="155" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
-<rect x="715" y="367" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
-<rect x="715" y="508" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
-<rect x="715" y="649" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
-<rect x="715" y="791" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
-<rect x="715" y="1074" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
-<rect x="715" y="1567" width="526" height="118" rx="16" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
-<rect x="715" y="2062" width="526" height="118" rx="16" fill="#fbdfdf" stroke="#373435" stroke-width="3"/>
-<rect x="1359" y="155" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
-<rect x="1359" y="367" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
-<rect x="1359" y="508" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
-<rect x="1359" y="932" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
-<rect x="1359" y="1074" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
-<rect x="1359" y="1215" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
-<rect x="1359" y="1356" width="526" height="118" rx="16" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
-<rect x="1359" y="1497" width="526" height="118" rx="16" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
-<rect x="1359" y="1638" width="526" height="118" rx="16" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
-<rect x="1359" y="1780" width="526" height="118" rx="16" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
-<rect x="1359" y="1921" width="526" height="118" rx="16" fill="#fbdfdf" stroke="#373435" stroke-width="3"/>
-<rect x="1359" y="2062" width="526" height="118" rx="16" fill="#fbdfdf" stroke="#373435" stroke-width="3"/>
-<rect x="1359" y="2204" width="526" height="118" rx="16" fill="#fbdfdf" stroke="#373435" stroke-width="3"/>
-<rect x="2002" y="84" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
-<rect x="2002" y="226" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
-<rect x="2002" y="367" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<rect x="2001" y="112" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
+<rect x="2001" y="252" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="182" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
+<rect x="715" y="182" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
+<rect x="2001" y="462" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<rect x="2001" y="602" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<rect x="2001" y="742" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<rect x="2001" y="882" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="672" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
+<rect x="715" y="672" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="1092" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="1232" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<rect x="715" y="1162" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
+<rect x="715" y="1442" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
+<rect x="715" y="1652" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="1862" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="2002" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="2142" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="2282" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="2422" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="2562" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<rect x="715" y="2212" width="526" height="118" rx="16" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="2772" width="526" height="118" rx="16" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="2912" width="526" height="118" rx="16" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="3052" width="526" height="118" rx="16" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="3192" width="526" height="118" rx="16" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="3332" width="526" height="118" rx="16" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="3472" width="526" height="118" rx="16" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
+<rect x="715" y="3122" width="526" height="118" rx="16" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="3682" width="526" height="118" rx="16" fill="#e2f5e4" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="3822" width="526" height="118" rx="16" fill="#e2f5e4" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="3962" width="526" height="118" rx="16" fill="#e2f5e4" stroke="#373435" stroke-width="3"/>
+<rect x="715" y="3822" width="526" height="118" rx="16" fill="#e2f5e4" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="4172" width="526" height="118" rx="16" fill="#fbdfdf" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="4312" width="526" height="118" rx="16" fill="#fbdfdf" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="4452" width="526" height="118" rx="16" fill="#fbdfdf" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="4592" width="526" height="118" rx="16" fill="#fbdfdf" stroke="#373435" stroke-width="3"/>
+<rect x="1358" y="4732" width="526" height="118" rx="16" fill="#fbdfdf" stroke="#373435" stroke-width="3"/>
+<rect x="715" y="4452" width="526" height="118" rx="16" fill="#fbdfdf" stroke="#373435" stroke-width="3"/>
+<rect x="72" y="2317" width="526" height="118" rx="16" fill="#ffffff" stroke="#373435" stroke-width="3"/>
 <g font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="44" fill="#1f1f1f" text-anchor="middle">
-<text x="335" y="1149" font-weight="bold">Inicio</text>
-<text x="978" y="230" font-weight="bold">Salas</text>
-<text x="978" y="442" font-weight="bold">Cartelera</text>
-<text x="978" y="583" font-weight="bold">Películas</text>
-<text x="978" y="724" font-weight="bold">¿Cómo funciona?</text>
-<text x="978" y="840" font-weight="bold">Ingresar /</text>
-<text x="978" y="894" font-weight="bold">Registrarse</text>
-<text x="978" y="1149" font-weight="bold">Mi cuenta</text>
-<text x="978" y="1616" font-weight="bold">Panel del</text>
-<text x="978" y="1670" font-weight="bold">organizador</text>
-<text x="978" y="2137" font-weight="bold">Administración</text>
-<text x="1622" y="230">Detalle de sala</text>
-<text x="1622" y="442">Detalle de función</text>
-<text x="1622" y="583">Ficha de película</text>
-<text x="1622" y="1007">Mis reservas</text>
-<text x="1622" y="1149">Mis calificaciones</text>
-<text x="1622" y="1264">Salas y organizadores</text>
-<text x="1622" y="1318">seguidos</text>
-<text x="1622" y="1431">Mis salas (ABM)</text>
-<text x="1622" y="1572">Funciones (ABM)</text>
-<text x="1622" y="1713">Películas (ABM)</text>
-<text x="1622" y="1829">Usuarios</text>
-<text x="1622" y="1883">bloqueados</text>
-<text x="1622" y="1996">Usuarios</text>
-<text x="1622" y="2137">Películas</text>
-<text x="1622" y="2279">Estadísticas</text>
-<text x="2265" y="159">Próximas funciones</text>
-<text x="2265" y="275">Historial de</text>
-<text x="2265" y="329">proyecciones</text>
-<text x="2265" y="442">Reserva de lugares</text>
+<text x="2264" y="186">Próximas funciones</text>
+<text x="2264" y="299">Historial de</text>
+<text x="2264" y="353">proyecciones</text>
+<text x="1621" y="256">Detalle de sala</text>
+<text x="978" y="256" font-weight="bold">Salas</text>
+<text x="2264" y="536">Votación de títulos</text>
+<text x="2264" y="676">Acuerdo de fecha</text>
+<text x="2264" y="816">Reserva de lugares</text>
+<text x="2264" y="956">Pago de la entrada</text>
+<text x="1621" y="746">Detalle de función</text>
+<text x="978" y="746" font-weight="bold">Cartelera</text>
+<text x="1621" y="1166">Ficha de película</text>
+<text x="1621" y="1306">Pedidos de títulos</text>
+<text x="978" y="1236" font-weight="bold">Películas</text>
+<text x="978" y="1516" font-weight="bold">¿Cómo funciona?</text>
+<text x="978" y="1699" font-weight="bold">Ingresar /</text>
+<text x="978" y="1753" font-weight="bold">Registrarse</text>
+<text x="1621" y="1936">Mis reservas</text>
+<text x="1621" y="2076">Mis pagos</text>
+<text x="1621" y="2216">Mis calificaciones</text>
+<text x="1621" y="2329">Salas y organizadores</text>
+<text x="1621" y="2383">seguidos</text>
+<text x="1621" y="2469">Mis puntos y</text>
+<text x="1621" y="2523">beneficios</text>
+<text x="1621" y="2636">Solicitar sala propia</text>
+<text x="978" y="2286" font-weight="bold">Mi cuenta</text>
+<text x="1621" y="2846">Mis salas (ABM)</text>
+<text x="1621" y="2986">Funciones (ABM)</text>
+<text x="1621" y="3126">Películas (ABM)</text>
+<text x="1621" y="3266">Usuarios bloqueados</text>
+<text x="1621" y="3406">Pedidos disponibles</text>
+<text x="1621" y="3519">Recaudación por</text>
+<text x="1621" y="3573">función</text>
+<text x="978" y="3196" font-weight="bold">Panel del organizador</text>
+<text x="1621" y="3756">Solicitudes de sala</text>
+<text x="1621" y="3896">Denuncias</text>
+<text x="1621" y="4036">Revisión de catálogo</text>
+<text x="978" y="3896" font-weight="bold">Panel de moderación</text>
+<text x="1621" y="4246">Usuarios</text>
+<text x="1621" y="4386">Películas</text>
+<text x="1621" y="4526">Estadísticas</text>
+<text x="1621" y="4666">Comercios asociados</text>
+<text x="1621" y="4779">Parámetros del</text>
+<text x="1621" y="4833">sistema</text>
+<text x="978" y="4526" font-weight="bold">Administración</text>
+<text x="335" y="2391" font-weight="bold">Inicio</text>
 </g>
-<rect x="72" y="2379" width="65" height="44" rx="8" fill="#ffffff" stroke="#373435" stroke-width="3"/>
-<text x="152" y="2414" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="40" fill="#1f1f1f">Acceso público</text>
-<rect x="526" y="2379" width="65" height="44" rx="8" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
-<text x="606" y="2414" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="40" fill="#1f1f1f">Requiere usuario registrado</text>
-<rect x="1260" y="2379" width="65" height="44" rx="8" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
-<text x="1340" y="2414" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="40" fill="#1f1f1f">Rol organizador</text>
-<rect x="1736" y="2379" width="65" height="44" rx="8" fill="#fbdfdf" stroke="#373435" stroke-width="3"/>
-<text x="1816" y="2414" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="40" fill="#1f1f1f">Rol administrador</text>
+<rect x="72" y="4980" width="65" height="44" rx="8" fill="#ffffff" stroke="#373435" stroke-width="3"/>
+<text x="152" y="5015" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="40" fill="#1f1f1f">Acceso público</text>
+<rect x="492" y="4980" width="65" height="44" rx="8" fill="#e3ecfa" stroke="#373435" stroke-width="3"/>
+<text x="572" y="5015" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="40" fill="#1f1f1f">Requiere usuario registrado</text>
+<rect x="1172" y="4980" width="65" height="44" rx="8" fill="#fff1cc" stroke="#373435" stroke-width="3"/>
+<text x="1252" y="5015" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="40" fill="#1f1f1f">Rol organizador</text>
+<rect x="72" y="5050" width="65" height="44" rx="8" fill="#e2f5e4" stroke="#373435" stroke-width="3"/>
+<text x="152" y="5085" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="40" fill="#1f1f1f">Rol moderador</text>
+<rect x="472" y="5050" width="65" height="44" rx="8" fill="#fbdfdf" stroke="#373435" stroke-width="3"/>
+<text x="552" y="5085" font-family="Liberation Sans, Arial, Helvetica, sans-serif" font-size="40" fill="#1f1f1f">Rol administrador</text>
 </svg>
