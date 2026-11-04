@@ -42,20 +42,3 @@ no le quita memoria a producción (la t3.small tiene 2 GB) ni toca la base que r
 
 `main` sólo recibe cambios por PR: no se puede empujar directo, reescribir su historia ni
 borrarla. `dev` tampoco se puede borrar.
-
-## Los casos de prueba
-
-Primero se escriben los casos, y después se automatizan. Cada uno lleva el camino feliz y sus
-bordes:
-- apretar dos veces el mismo botón;
-- valores negativos, con letras o por encima del cupo;
-- cerrar una votación o un acuerdo sin llegar al mínimo.
-
-Los casos están en `e2e/casos.md` del front. Hoy cubren ingresar, reservar (con doble clic, 0, -1,
-letras y por encima de los lugares libres), «Mis reservas» y cancelar. Después siguen votar títulos,
-proponer y votar franjas, confirmar la franja ganadora y el panel de reservas del organizador.
-
-## Lo que recibe el profesor
-
-Un zip con las dos URL, los usuarios de cada rol con sus claves y los enlaces a los repositorios.
-Las claves no van en este repositorio, porque es público.
