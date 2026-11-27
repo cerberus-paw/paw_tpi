@@ -1,0 +1,512 @@
+classDiagram
+  %% Modelo de objetos de IndieCinema 1.0.0 (tag entrega-final).
+  %% Es el de la entrega 2 («Diagrama de clase.mmd») puesto al día con las clases de src/Modelo de
+  %% cada subsistema. Entre subsistemas no hay referencias a objetos: se guarda el id y se pide el
+  %% resto por la API interna; por eso esas relaciones van punteadas.
+
+  %% =========================================
+  %% SUBSISTEMA: CUENTAS
+  %% =========================================
+  class Usuario {
+    -UUID id
+    -String nombre
+    -String correo
+    -String contrasenaHash
+    -EstadoCuenta estado
+    -List~Rol~ roles
+    -DateTime correoVerificadoEn
+    +nuevo(nombre, correo, contrasenaHash)$ Usuario
+  }
+
+  class Rol {
+    <<enumeration>>
+    ESPECTADOR
+    ORGANIZADOR
+    MODERADOR
+    ADMINISTRADOR
+  }
+
+  class EstadoCuenta {
+    <<enumeration>>
+    PENDIENTE
+    ACTIVA
+    SUSPENDIDA
+  }
+
+  class Sesion {
+    -String huella
+    -DateTime creadaEn
+    -DateTime usadaEn
+    -DateTime venceEn
+    +sigueViva(ahora) Boolean
+    +hayQueAnotarUso(ahora) Boolean
+  }
+
+  class TokenDeCuenta {
+    -String huella
+    -PropositoDeToken proposito
+    -DateTime venceEn
+    -DateTime usadoEn
+    +estaUsado() Boolean
+    +estaVencido(ahora) Boolean
+  }
+
+  class PropositoDeToken {
+    <<enumeration>>
+    VERIFICAR
+    RECUPERAR
+  }
+
+  class Seguimiento {
+    -TipoDeSeguimiento tipo
+    -UUID seguidoId
+  }
+
+  class TipoDeSeguimiento {
+    <<enumeration>>
+    SALA
+    ORGANIZADOR
+  }
+
+  Usuario "1" *-- "1..*" Rol : posee
+  Usuario ..> EstadoCuenta
+  Usuario "1" *-- "*" Sesion : abre
+  Usuario "1" *-- "*" TokenDeCuenta : recibe
+  Usuario "1" *-- "*" Seguimiento : sigue
+  TokenDeCuenta ..> PropositoDeToken
+  Seguimiento ..> TipoDeSeguimiento
+
+  %% =========================================
+  %% SUBSISTEMA: MODERACION
+  %% =========================================
+  class SolicitudDeSala {
+    -UUID id
+    -UUID salaId
+    -UUID usuarioId
+    -DatosDeSala datos
+    -EstadoSolicitud estado
+    -DateTime enviadaEn
+    -String motivo
+    +estaPendiente() Boolean
+    +estaPorResolver() Boolean
+  }
+
+  class EstadoSolicitud {
+    <<enumeration>>
+    PENDIENTE
+    EN_REVISION_MANUAL
+    DEVUELTA
+    APROBADA
+    RECHAZADA
+    VENCIDA
+  }
+
+  class RequisitoDeSala {
+    <<enumeration>>
+    SEGURO_VIGENTE
+    HABILITACION
+    CAPACIDAD
+    CONDICIONES
+    +completo(tildados)$ Boolean
+  }
+
+  class Documento {
+    -UUID id
+    -UUID salaId
+    -TipoDocumento tipo
+    -String archivo
+    -Date venceEn
+    -EstadoDocumento estado
+    +vencidoAl(hoy) Boolean
+  }
+
+  class TipoDocumento {
+    <<enumeration>>
+    SEGURO
+    HABILITACION
+  }
+
+  class EstadoDocumento {
+    <<enumeration>>
+    PENDIENTE
+    ACEPTADO
+    RECHAZADO
+  }
+
+  class Denuncia {
+    -UUID id
+    -TipoDenuncia tipo
+    -UUID objetoId
+    -UUID usuarioId
+    -CategoriaDenuncia categoria
+    -GravedadDenuncia gravedad
+    -String detalle
+  }
+
+  class TipoDenuncia {
+    <<enumeration>>
+    SALA
+    FUNCION
+    OBRA
+    CALIFICACION
+  }
+
+  class CategoriaDenuncia {
+    <<enumeration>>
+    SEGURIDAD
+    NO_SE_HIZO
+    OFENSIVO
+    FALSA
+    DERECHOS
+    CAMBIO_SIN_AVISO
+    INSTALACIONES
+    OTRO
+    +gravedad() GravedadDenuncia
+  }
+
+  class GravedadDenuncia {
+    <<enumeration>>
+    BAJA
+    MEDIA
+    ALTA
+  }
+
+  class Suspension {
+    -UUID id
+    -UUID salaId
+    -CausaSuspension causa
+    -String motivo
+    -DateTime desde
+  }
+
+  class CausaSuspension {
+    <<enumeration>>
+    RETIRO
+    VENCIMIENTO
+    DENUNCIA
+  }
+
+  SolicitudDeSala ..> EstadoSolicitud
+  SolicitudDeSala ..> RequisitoDeSala : checklist
+  SolicitudDeSala "1" *-- "1..2" Documento : adjunta
+  Documento ..> TipoDocumento
+  Documento ..> EstadoDocumento
+  Denuncia ..> TipoDenuncia
+  Denuncia ..> CategoriaDenuncia
+  CategoriaDenuncia ..> GravedadDenuncia
+  Suspension ..> CausaSuspension
+  Denuncia "*" --> "0..1" Suspension : puede causar
+
+  %% =========================================
+  %% SUBSISTEMA: PROGRAMACION
+  %% =========================================
+  class Sala {
+    -UUID id
+    -UUID organizadorId
+    -DatosDeSala datos
+    -String imagen
+    -Boolean habilitada
+    +crearFuncion(obrasIds, cupo, precioBase) Funcion
+    +programarFuncion(obrasIds, cupo, precioBase, fechaHora) Funcion
+    +cambiarHabilitacion(habilitada) void
+    +motivoParaPisarse(fechaHora, duracion, ocupado) String
+  }
+
+  class DatosDeSala {
+    -String nombre
+    -String direccion
+    -String localidad
+    -Integer capacidad
+    -Integer peliculasPorFuncion
+    -Integer duracionFuncion
+  }
+
+  class Obra {
+    -UUID id
+    -UUID duenoId
+    -String titulo
+    -String sinopsis
+    -Integer anio
+    -String director
+    -Integer duracionMinutos
+    -TipoObra tipo
+    -OrigenCopia origenCopia
+    -EstadoObra estado
+    +estaAprobada() Boolean
+  }
+
+  class TipoObra {
+    <<enumeration>>
+    PELICULA
+    CORTOMETRAJE
+  }
+
+  class OrigenCopia {
+    <<enumeration>>
+    OBRA_PROPIA
+    DOMINIO_PUBLICO
+    LICENCIA_ADQUIRIDA
+  }
+
+  class EstadoObra {
+    <<enumeration>>
+    PENDIENTE
+    APROBADA
+    RECHAZADA
+  }
+
+  class Genero {
+    -UUID id
+    -String nombre
+    -String descripcion
+  }
+
+  class Funcion {
+    -UUID id
+    -UUID salaId
+    -List~UUID~ obrasIds
+    -Decimal precioBase
+    -Integer cupo
+    -EstadoFuncion estado
+    -DateTime fechaHora
+    -DateTime votacionCierraEn
+    +cerrarVotacionTitulos(obrasElegidas) void
+    +fijarFechaHora(fechaHora) void
+    +cancelar() void
+    +finalizar() void
+  }
+
+  class EstadoFuncion {
+    <<enumeration>>
+    EN_VOTACION_TITULOS
+    EN_ACUERDO_FECHA
+    PROGRAMADA
+    CANCELADA
+    FINALIZADA
+    +puedePasarA(siguiente) Boolean
+  }
+
+  class Voto {
+    -UUID funcionId
+    -UUID usuarioId
+    -UUID obraId
+    -DateTime votadoEn
+  }
+
+  class PedidoDeTitulo {
+    -UUID id
+    -String titulo
+    -String director
+    -EstadoPedido estado
+    -Integer adhesiones
+    -UUID obraId
+    -UUID tomadoPor
+  }
+
+  class EstadoPedido {
+    <<enumeration>>
+    ABIERTO
+    ACTIVO
+    TOMADO
+  }
+
+  class BloqueoDeSala {
+    -UUID salaId
+    -UUID usuarioId
+    -String motivo
+  }
+
+  Sala *-- DatosDeSala
+  Sala "1" o-- "*" Funcion : programa
+  Sala "1" *-- "*" BloqueoDeSala : bloquea
+  Funcion "*" --> "1..*" Obra : proyecta
+  Funcion "1" *-- "*" Voto : recibe
+  Voto "*" --> "1" Obra : elige
+  Obra "*" -- "1..*" Genero : categorizada en
+  Obra ..> TipoObra
+  Obra ..> OrigenCopia
+  Obra ..> EstadoObra
+  Funcion ..> EstadoFuncion
+  PedidoDeTitulo ..> EstadoPedido
+  PedidoDeTitulo "*" --> "0..1" Obra : se cumple con
+
+  %% =========================================
+  %% SUBSISTEMA: FUNCIONES
+  %% =========================================
+  class Reserva {
+    -UUID id
+    -UUID funcionId
+    -UUID usuarioId
+    -String codigo
+    -Integer cantidad
+    -Decimal total
+    -EstadoReserva estado
+    -DateTime venceEn
+    -String preferenciaId
+    -String pagoId
+    -String cupon
+    +nueva(funcion, usuarioId, cantidad)$ Reserva
+    +conCupon(codigo, porcentaje, precioBase) Reserva
+    +vencida(ahora) Boolean
+    +cancelar() Reserva
+  }
+
+  class EstadoReserva {
+    <<enumeration>>
+    PENDIENTE_PAGO
+    CONFIRMADA
+    CANCELADA
+    ASISTIO
+    AUSENTE
+    +puedePasarA(siguiente) Boolean
+    +ocupaLugares() Boolean
+  }
+
+  class CambioDeReserva {
+    -EstadoReserva anterior
+    -EstadoReserva nuevo
+    -String autorRol
+    -UUID autorId
+    -String motivo
+    -DateTime hechoEn
+  }
+
+  class AcuerdoFecha {
+    -UUID id
+    -UUID funcionId
+    -Integer minimoAsistentes
+    -EstadoAcuerdo estado
+    -DateTime cerradoEn
+    +franjaMasVotada() FranjaHoraria
+    +alcanzoMinimo() Boolean
+    +fechaLimite() DateTime
+    +vencioSinMinimo(ahora) Boolean
+  }
+
+  class EstadoAcuerdo {
+    <<enumeration>>
+    ABIERTO
+    CONFIRMADO
+    SIN_MINIMO
+    CANCELADO
+  }
+
+  class FranjaHoraria {
+    -UUID id
+    -DateTime inicio
+    -DateTime fin
+    -Integer votos
+  }
+
+  class Calificacion {
+    -UUID id
+    -UUID reservaId
+    -Integer puntaje
+    -String comentario
+    -Boolean comentarioOculto
+    +nueva(reserva, funcion, puntaje, comentario)$ Calificacion
+  }
+
+  class Conducta {
+    -UUID reservaId
+    -UUID usuarioId
+    -UUID organizadorId
+    -Boolean positiva
+    -String motivo
+    +nueva(reserva, funcion, organizadorId, positiva, motivo)$ Conducta
+  }
+
+  Reserva ..> EstadoReserva
+  Reserva "1" *-- "*" CambioDeReserva : historial
+  AcuerdoFecha ..> EstadoAcuerdo
+  AcuerdoFecha "1" *-- "2..*" FranjaHoraria : propone
+  Reserva "1" -- "0..1" Calificacion : la califica el espectador
+  Reserva "1" -- "0..1" Conducta : la califica el organizador
+
+  %% =========================================
+  %% SUBSISTEMA: RECAUDACION
+  %% =========================================
+  class ParametroDeReparto {
+    -UUID id
+    -Integer sala
+    -Integer dueno
+    -Integer plataforma
+    -DateTime vigenteDesde
+    +rigeEn(momento) Boolean
+  }
+
+  class Reparto {
+    -UUID id
+    -UUID funcionId
+    -Integer cobradoCentavos
+    -Integer comisionCentavos
+    -DateTime calculadoEn
+    +calcular(funcion, cobrado, parametro, comision)$ Reparto
+  }
+
+  class ParteDelReparto {
+    -RolDelReparto rol
+    -UUID beneficiarioId
+    -Integer centavos
+  }
+
+  class RolDelReparto {
+    <<enumeration>>
+    SALA
+    DUENO
+    PLATAFORMA
+  }
+
+  class Liquidacion {
+    -UUID id
+    -UUID beneficiarioId
+    -Mes periodo
+    -Integer centavos
+    -EstadoDeLiquidacion estado
+    -DateTime transferidaEn
+    +estaTransferida() Boolean
+  }
+
+  class EstadoDeLiquidacion {
+    <<enumeration>>
+    PENDIENTE
+    TRANSFERIDA
+  }
+
+  class Comercio {
+    -UUID id
+    -String nombre
+    -String beneficio
+    -String direccion
+    -Boolean activo
+  }
+
+  class Cupon {
+    -String codigo
+    -UUID usuarioId
+    -Integer porcentaje
+    -Integer puntos
+    -DateTime venceEn
+    +nuevo(usuarioId, ahora)$ Cupon
+    +vencido(ahora) Boolean
+  }
+
+  Reparto "*" --> "1" ParametroDeReparto : usa
+  Reparto "1" *-- "1..*" ParteDelReparto : reparte en
+  ParteDelReparto ..> RolDelReparto
+  Liquidacion "1" o-- "*" ParteDelReparto : suma las del mes
+  Liquidacion ..> EstadoDeLiquidacion
+
+  %% =========================================
+  %% RELACIONES INTER-SUBSISTEMAS
+  %% =========================================
+  Usuario ..> SolicitudDeSala : Inicia
+  SolicitudDeSala ..> Sala : Crea al aprobarse
+  Suspension ..> Sala : Deshabilita
+  Usuario ..> PedidoDeTitulo : Pide y adhiere
+  Usuario ..> Reserva : Realiza
+  Funcion ..> Reserva : Pone el cupo
+  Funcion ..> AcuerdoFecha : Delega la fecha
+  Funcion ..> Reparto : Al finalizar
+  Reserva ..> Cupon : Usa
+  Usuario ..> Cupon : Canjea puntos

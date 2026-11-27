@@ -32,6 +32,19 @@ es público.
 Lo nuevo respecto de la entrega 4 son `moderacion` y `recaudacion`, y lo que ellos agregan a los
 otros tres.
 
+## Diagramas
+
+La arquitectura y el modelo de objetos de la versión 1.0.0, con los cinco subsistemas:
+
+![Arquitectura de IndieCinema 1.0.0](diagramas/arquitectura.png)
+
+![Modelo de objetos de IndieCinema 1.0.0](diagramas/modelo-de-objetos.png)
+
+| Archivo | Qué es |
+| --- | --- |
+| [`diagramas/arquitectura.excalidraw`](diagramas/arquitectura.excalidraw) | Arquitectura, editable en [Excalidraw](https://excalidraw.com) |
+| [`diagramas/modelo-de-objetos.mmd`](diagramas/modelo-de-objetos.mmd) | Modelo de objetos en [Mermaid](https://mermaid.live): el de la [entrega 2](../entrega-2/) puesto al día con las clases del código |
+
 ## Integrantes — Grupo Cerberus
 
 - Salvador Baez
