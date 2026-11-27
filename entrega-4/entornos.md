@@ -25,8 +25,9 @@ no le quita memoria a producción (la t3.small tiene 2 GB) ni toca la base que r
 
 1. Cada subtarea de Jira tiene su rama `IC-xxx-descripcion`, que sale de `dev`. Su PR apunta
    a `dev`, que es la rama por defecto de los dos repositorios: corre la CI (gitleaks, composer
-   audit, PHPStan y PHPUnit en el back, y el lint en el front), lo aprueba otro integrante y lo
-   mergea el autor.
+   audit, PHPStan y PHPUnit en el back, y el lint en el front). Con la CI en verde, lo mergea
+   el autor. Otro integrante lo puede revisar, pero no hace falta: las reglas de GitHub no
+   piden una aprobación.
 2. Con la CI en verde, el CD de desarrollo entra por SSH al servidor de desarrollo y corre
    `herramientas/desplegar.sh`. El script trae la rama `dev` de los dos repositorios,
    recrea los contenedores y migra la base.
