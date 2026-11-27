@@ -32,18 +32,39 @@ es público.
 Lo nuevo respecto de la entrega 4 son `moderacion` y `recaudacion`, y lo que ellos agregan a los
 otros tres.
 
+## Videos de la demo
+
+Cuatro videos recorren el ciclo completo en el sitio, de la sala que se abre a la plata que se
+reparte. Cada uno lo grabó quien hizo esa parte. Se descargan del
+[release `entrega-final`](https://github.com/cerberus-paw/paw_tpi/releases/tag/entrega-final).
+
+| Video | Qué muestra | Quién |
+| --- | --- | --- |
+| [1 · Salas, moderación y conducta](https://github.com/cerberus-paw/paw_tpi/releases/download/entrega-final/video-1-salas-moderacion-y-conducta.mp4) | La solicitud de sala que al admitirse crea la sala y da el rol, las denuncias que suman hacia una sanción y las consecuencias de la conducta del espectador | Mateo Nomico |
+| [2 · Pedidos, votación y acuerdo de fecha](https://github.com/cerberus-paw/paw_tpi/releases/download/entrega-final/video-2-pedidos-votacion-y-acuerdo.mp4) | El público pide títulos y vota; el pedido se activa, la reputación da prioridad, la votación cierra por fecha y la función se confirma al llegar al mínimo | Salvador Baez |
+| [3 · Reserva, cobro y beneficios](https://github.com/cerberus-paw/paw_tpi/releases/download/entrega-final/video-3-reserva-cobro-y-beneficios.mp4) | Canje de puntos, reserva con cupo y conducta, cobro con Mercado Pago y cancelación según la política de la sala | Agustina Ortiz |
+| [4 · Función, calificación y plata](https://github.com/cerberus-paw/paw_tpi/releases/download/entrega-final/video-4-funcion-calificacion-y-plata.mp4) | La asistencia con el comprobante, la función que se finaliza sola, la calificación que mueve la reputación, el reparto, las liquidaciones y los reportes que terminan en una decisión | Tomás Resnik |
+
 ## Diagramas
 
-La arquitectura y el modelo de objetos de la versión 1.0.0, con los cinco subsistemas:
+La arquitectura, el modelo de objetos y el DER de la versión 1.0.0, con los cinco subsistemas:
 
 ![Arquitectura de IndieCinema 1.0.0](diagramas/arquitectura.png)
 
+![Por dentro de un subsistema](diagramas/por-dentro-de-un-subsistema.png)
+
 ![Modelo de objetos de IndieCinema 1.0.0](diagramas/modelo-de-objetos.png)
+
+![DER conceptual](diagramas/der-conceptual.png)
+
+![DER con atributos](diagramas/der-con-atributos.png)
 
 | Archivo | Qué es |
 | --- | --- |
 | [`diagramas/arquitectura.excalidraw`](diagramas/arquitectura.excalidraw) | Arquitectura, editable en [Excalidraw](https://excalidraw.com) |
+| [`diagramas/por-dentro-de-un-subsistema.excalidraw`](diagramas/por-dentro-de-un-subsistema.excalidraw) | Las capas de un subsistema, también en Excalidraw |
 | [`diagramas/modelo-de-objetos.mmd`](diagramas/modelo-de-objetos.mmd) | Modelo de objetos en [Mermaid](https://mermaid.live): el de la [entrega 2](../entrega-2/) puesto al día con las clases del código |
+| [`diagramas/der.drawio`](diagramas/der.drawio) | DER conceptual y con atributos, editable en [draw.io](https://app.diagrams.net), como el de la [entrega 3](../entrega-3/) |
 
 ## Integrantes — Grupo Cerberus
 
